@@ -1,0 +1,29 @@
+/* Custom CSS
+ * --------------------------------------- */
+
+body{
+  font-family: "Galdeano","Hiragino Sans GB",
+    "Microsoft YaHei",Trebuchet,"Trebuchet MS",
+    Tahoma,"Lucida Grande","Lucida Sans Unicode",
+    Verdana,sans-serif;
+}
+
+.orange {
+  color: #FDBD66;
+}
+
+.red {
+  color: #F14958;
+}
+
+.section{
+  text-align: center;
+}
+
+.voffset {
+  margin-top: 120px;
+}
+
+.hoffset {
+  margin-left: 60px;
+}

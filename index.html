@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://wwww.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Wudired</title>
+  <meta name="Polo" content="Polo" />
+  <meta name="keywords" content="Wudired" />
+  <meta name="Resource-type" content="Document" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="css/jquery.fullPage.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/customize.css">
+  <link href="http://fonts.googleapis.com/css?family=Galdeano:300,400,700" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lora:300,400,700" rel="stylesheet" type="text/css">
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#fullpage').fullpage({
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        sectionsColor: ['#313131', '#F8F8F8', '#1E223F'],
+        scrollBar: true,
+        easing: 'swing',
+        navigation: true,
+        navigationPosition: 'right'
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="fullpage">
+    <div class="section" id="section0">
+      <div class="row">
+        <div class="col-md-offset-1 col-md-5">
+          <img src="images/undergrad.jpg" alt="undergraduate" class="img-thumbnail img-responsive" width="400" />
+        </div>
+        <div class="col-md-offset-1 voffset col-md-4 visible-md visible-lg orange">
+          <h1>Hello, I am Wudired!</h1>
+          <h2>2008&#126;2012</h2>
+          <h2>In Xi'an.</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="section1">
+      <div class="row">
+        <div class="col-md-offset-1 voffset col-md-4 visible-md visible-lg">
+          <h1>This is a cool pictue of me!</h1>
+          <h2>2012&#126;Now</h2>
+          <h2>In Tencent.</h2>
+        </div>
+        <div class="col-md-offset-1 col-md-5">
+          <img src="images/cool.jpg" width="350" alt="Cool of me" class="img-responsive img-thumbnail">
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="section2">
+      <div class="col-md-offset-1 col-md-5">
+        <img src="images/wedding.jpg" height="480" width="640" alt="wedding" class="img-responsive img-thumbnail">
+      </div>
+      <div class="col-md-offset-1 col-md-4 visible-md visible-lg red">
+        <h1>I am the Best Man!</h1>
+        <h2>Oct, 2012</h2>
+        <h2>At Hua Rong's Wedding Ceremony.</h2>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
