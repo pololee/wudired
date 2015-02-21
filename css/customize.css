@@ -27,3 +27,7 @@ body{
 .hoffset {
   margin-left: 60px;
 }
+
+.pic {
+  visibility: hidden;
+}
