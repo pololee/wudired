@@ -11,7 +11,7 @@ $(document).ready(function(){
 
     afterRender: function(){
       lastSection = $('#section1');
-      $('#section1 .pic').css('visibility','visible').hide().fadeIn('slow');
+      $('#section1 .pic').css('visibility','visible').hide().fadeIn(2000);
     },
 
     afterLoad: function(anchorLink, index){
@@ -19,7 +19,7 @@ $(document).ready(function(){
 
       var loadedSection = $(this);
       lastSection = loadedSection;
-      loadedSection.find('.pic').css('visibility','visible').hide().fadeIn('slow');
+      loadedSection.find('.pic').css('visibility','visible').hide().fadeIn(1000);
     }
   });
 });
