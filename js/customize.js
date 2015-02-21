@@ -1,4 +1,6 @@
 $(document).ready(function(){
+  var lastSection;
+
   $('#fullpage').fullpage({
     anchors: ['firstPage', 'secondPage', '3rdPage'],
     sectionsColor: ['#313131', '#F8F8F8', '#1E223F'],
@@ -8,24 +10,16 @@ $(document).ready(function(){
     navigationPosition: 'right',
 
     afterRender: function(){
+      lastSection = $('#section1');
       $('#section1 .pic').css('visibility','visible').hide().fadeIn('slow');
     },
 
     afterLoad: function(anchorLink, index){
+      $(lastSection).find('.pic').css('visibility','hidden');
+
       var loadedSection = $(this);
+      lastSection = loadedSection;
       loadedSection.find('.pic').css('visibility','visible').hide().fadeIn('slow');
-      var lastSection = '#section' + (index-1);
-      var nextSection = '#section' + (index+1);
-      console.log("lastSection: " + lastSection);
-      console.log("nextSection:" + nextSection);
-      if ($(lastSection)) {
-        console.log("reset lastSection: " + lastSection);
-        $(lastSection).find('.pic').css('visibility','hidden');
-      }
-      if ($(nextSection)) {
-        console.log("reset nextSection:" + nextSection);
-        $(nextSection).find('.pic').css('visibility','hidden');
-      }
     }
   });
 });
